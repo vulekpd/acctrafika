@@ -26,17 +26,17 @@ function Home() {
 
         <div className="card">
           <center><h3>Zašto baš AccTrafika?</h3></center>
-          <p>Cene koje imaju smisla</p>
+          <p>Cene koje imaju smisla:</p>
           <ul>
             <li>Zaboravi na preplaćene naloge i skupe pretplate. 
               Kod nas dobijaš realnu cenu – bez skrivenih troškova i bez dodatnih “naknada za obradu”.</li>
           </ul>
-          <p>Raznovrsna ponuda na jednom mestu</p>
+          <p>Raznovrsna ponuda na jednom mestu:</p>
           <ul>
             <li>Spotify? YouTube Premium? Discord Nitro? Canva Pro? Nalozi za igrice kao što su Steam, PSN, Xbox? 
-              Sve imamo. Ne moraš da skakućeš s jednog sajta na drugi – kod nas je sve u jednoj "<b>trafici</b>" 😉.</li>
+              Sve imamo. Ne moraš da skakućeš s jednog sajta na drugi – kod nas je sve u jednoj "<b>TRAFICI</b>" 😉.</li>
           </ul>
-          <p>Fleksibilno plaćanje</p>
+          <p>Fleksibilno plaćanje:</p>
           <ul>
             <li>
               Podržavamo plaćanje preko PayPala, banke ili nekih od načina koji vama odgovara.
