@@ -54,7 +54,7 @@ function PricePage() {
       </section>
 
       <footer>
-        Kontakt: @acctrafika (Instagram/Discord) | AccTrafika © 2025
+        Kontakt: @acctrafika (Instagram/Facebook) | AccTrafika © 2025
       </footer>
     </main>
   );
