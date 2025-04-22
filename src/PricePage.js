@@ -47,7 +47,9 @@ function PricePage() {
             <li>🖌️ 12 meseci -3500 RSD</li>
           </ul>
           <br></br>
-          <center><button className="cta-button">Naruči Sada</button></center>
+          <center><button className="cta-button" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGOU4wcaJto0ZFR4eWhyJC7RAh60G1OUbK9vZOum0nbIPKXw/viewform?usp=header', '_blank')}>
+              Poruči odmah
+            </button></center>
         </div>
       </section>
 
