@@ -19,7 +19,9 @@ function Home() {
           <p>AccTrafika ti nudi pouzdane i povoljne naloge za Spotify, 
             YouTube Premium, Discord Nitro, Canva Pro i popularne igrice. Bezbedna kupovina, 
             brza isporuka i podrška kad god ti zatreba. Sve na jednom mestu – kvalitet po super ceni!</p>
-          <button className="cta-button">Order Now</button>
+            <button className="cta-button" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGOU4wcaJto0ZFR4eWhyJC7RAh60G1OUbK9vZOum0nbIPKXw/viewform?usp=header', '_blank')}>
+              Poruči odmah
+            </button>
         </div>
 
         <div className="card">
