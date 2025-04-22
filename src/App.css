@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #000000, #1f1f1f);
+  color: white;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+button {
+  transition: all 0.3s ease;
+}
