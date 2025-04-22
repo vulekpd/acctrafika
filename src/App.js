@@ -17,7 +17,7 @@ function App() {
             Popuni formular i javljamo ti se u roku od 1h:
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe-template-link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScGOU4wcaJto0ZFR4eWhyJC7RAh60G1OUbK9vZOum0nbIPKXw/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
           >
