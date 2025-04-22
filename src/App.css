@@ -1,14 +1,123 @@
-
 body {
   margin: 0;
-  background: linear-gradient(to bottom, #000000, #1f1f1f);
+  background: #11141b;
   color: white;
+  font-family: sans-serif;
 }
 
-ul {
-  padding-left: 1rem;
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* razmak između leve i desne strane */
+  align-items: center;
+  background-color: #1d212a;
+  padding: 1rem 10%;
+  color: #26c2b7;
 }
 
-button {
+.logo {
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.text-section {
+  max-width: 400px;
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA button */
+.cta-button {
+  background-color: #0ba5a5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  background-color: rgba(91, 63, 192, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
+
+.nav-button:hover {
+  background-color: #26c2b7;
+  color: #11141b;
+}
+
+.cta-button:hover {
+  background-color: #089191;
+  transform: scale(1.05);
+  color: black;
+}
+
+/* Card section */
+.card {
+  background-color: white;
+  color: #11141b;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.line {
+  background-color: #cbd5e1;
+  height: 10px;
+  border-radius: 6px;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #1d212a;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  font-size: 1.25rem;
+  margin-top: 3rem;
+}
+
+

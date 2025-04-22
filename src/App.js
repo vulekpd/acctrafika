@@ -1,47 +1,63 @@
-
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import PricePage from "./PricePage";
 import "./App.css";
+
+function Home() {
+  return (
+    <main className="main-container">
+      <header className="header">
+        <h1 className="logo">AccTrafika</h1>
+        <nav>
+          <Link to="/prices" className="nav-button">Cene</Link>
+        </nav>
+      </header>
+
+      <section className="hero">
+        <div className="text-section">
+          <h2>Nalozi po povoljnim cenama</h2>
+          <p>AccTrafika ti nudi pouzdane i povoljne naloge za Spotify, 
+            YouTube Premium, Discord Nitro, Canva Pro i popularne igrice. Bezbedna kupovina, 
+            brza isporuka i podrška kad god ti zatreba. Sve na jednom mestu – kvalitet po super ceni!</p>
+          <button className="cta-button">Order Now</button>
+        </div>
+
+        <div className="card">
+          <center><h3>Zašto baš AccTrafika?</h3></center>
+          <p>Cene koje imaju smisla</p>
+          <ul>
+            <li>Zaboravi na preplaćene naloge i skupe pretplate. 
+              Kod nas dobijaš realnu cenu – bez skrivenih troškova i bez dodatnih “naknada za obradu”.</li>
+          </ul>
+          <p>Raznovrsna ponuda na jednom mestu</p>
+          <ul>
+            <li>Spotify? YouTube Premium? Discord Nitro? Canva Pro? Nalozi za igrice kao što su Steam, PSN, Xbox? 
+              Sve imamo. Ne moraš da skakućeš s jednog sajta na drugi – kod nas je sve u jednoj "<b>trafici</b>" 😉.</li>
+          </ul>
+          <p>Fleksibilno plaćanje</p>
+          <ul>
+            <li>
+              Podržavamo plaćanje preko PayPala, banke ili nekih od načina koji vama odgovara.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+      Kontakt: @acctrafika (Instagram/Facebook) | AccTrafika © 2025
+      </footer>
+    </main>
+  );
+}
 
 function App() {
   return (
-    <main className="min-h-screen p-6 bg-gradient-to-b from-black to-gray-900 text-white" style={{ fontFamily: "sans-serif" }}>
-      <div className="max-w-3xl mx-auto text-center space-y-6">
-        <h1 className="text-4xl font-bold">AccTrafika - Spotify Premium za 2.5€/mesec</h1>
-        <p className="text-lg text-gray-300">
-          Nema reklama. Full kvalitet zvuka. Radi na svim uređajima.
-        </p>
-
-        <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 space-y-4">
-          <h2 className="text-2xl font-semibold">Zatraži svoj slot</h2>
-          <p className="text-sm text-gray-400">
-            Popuni formular i javljamo ti se u roku od 1h:
-          </p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScGOU4wcaJto0ZFR4eWhyJC7RAh60G1OUbK9vZOum0nbIPKXw/viewform?usp=header"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-xl">
-              Otvori formular
-            </button>
-          </a>
-        </div>
-
-        <div className="mt-10 text-left space-y-3">
-          <h3 className="text-xl font-semibold">Zašto AccTrafika?</h3>
-          <ul className="list-disc list-inside text-gray-300 text-left">
-            <li>Legalno i bezbedno korišćenje Family planova</li>
-            <li>Brza aktivacija i tehnička podrška</li>
-            <li>Mogućnost otkaza u bilo kom trenutku</li>
-            <li>Podržani načini plaćanja: Revolut, PayPal, keš</li>
-          </ul>
-        </div>
-
-        <footer className="mt-12 text-gray-500 text-sm">
-          Kontakt: @acctrafika (Instagram/Discord) | AccTrafika © 2025
-        </footer>
-      </div>
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/prices" element={<PricePage />} />
+      </Routes>
+    </Router>
   );
 }
 
